@@ -47,7 +47,9 @@ export const data = {
   datasets: [
     {
       label: "Dataset 1",
-      data: labels.map(() => faker.datatype.number({ min: 0, max: 10000 })),
+      data: labels.map(() =>
+        faker.datatype.number({ min: -10000, max: 10000 })
+      ),
       borderColor: "rgb(255, 99, 132)",
       backgroundColor: "rgba(255, 99, 132, 0.5)",
       fill: true,
@@ -55,7 +57,9 @@ export const data = {
     },
     {
       label: "Dataset 2",
-      data: labels.map(() => faker.datatype.number({ min: 0, max: 10000 })),
+      data: labels.map(() =>
+        faker.datatype.number({ min: -10000, max: 10000 })
+      ),
       borderColor: "rgb(53, 162, 235)",
       backgroundColor: "rgba(53, 162, 235, 0.5)",
       fill: true,
